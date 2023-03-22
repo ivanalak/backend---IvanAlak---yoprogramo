@@ -31,6 +31,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 
 /**
@@ -98,7 +99,11 @@ public class MySecurityConfig {
    
       return authProvider;
   }   
+@Bean
+public void addCorsMappings(CorsRegistry registry){
 
+    registry.addMapping("/**");
+}
   
  
 }
