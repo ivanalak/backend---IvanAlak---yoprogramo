@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/user")
-@CrossOrigin (origins="*")
+@CrossOrigin (origins="https://portfolio---ivanalak---front.web.app")
 
 public class UsuarioController {
     
