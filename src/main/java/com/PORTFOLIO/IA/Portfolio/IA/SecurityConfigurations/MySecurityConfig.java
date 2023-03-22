@@ -31,7 +31,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
+
 
 
 /**
@@ -63,7 +63,7 @@ public class MySecurityConfig {
   @Bean
    protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-      http
+      http.csrf().disable()
               .authorizeHttpRequests().requestMatchers("/generate-token", 
                       "/user/", "/actual-usuario"
                       ,"/api/personas","/api/personas/{Id}"
