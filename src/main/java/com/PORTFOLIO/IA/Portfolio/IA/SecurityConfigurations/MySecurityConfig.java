@@ -63,7 +63,7 @@ public class MySecurityConfig {
   @Bean
    protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-      http.csrf().disable()
+      http
               .authorizeHttpRequests().requestMatchers("/generate-token", 
                       "/user/", "/actual-usuario"
                       ,"/api/personas","/api/personas/{Id}"
