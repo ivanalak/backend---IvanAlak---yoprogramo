@@ -10,6 +10,7 @@ com\PORTFOLIO\IA\Portfolio\IA\SecurityEntity\Usuario.class
 com\PORTFOLIO\IA\Portfolio\IA\Service\ProyectosServiceImplement.class
 com\PORTFOLIO\IA\Portfolio\IA\Service\ExperienciaServiceImplement.class
 com\PORTFOLIO\IA\Portfolio\IA\PortfolioIaApplication.class
+com\PORTFOLIO\IA\Portfolio\IA\WebConfig.class
 com\PORTFOLIO\IA\Portfolio\IA\SecurityRepository\UsuarioRepository.class
 com\PORTFOLIO\IA\Portfolio\IA\Controller\ExperienciaController.class
 com\PORTFOLIO\IA\Portfolio\IA\SecurityConfigurations\MySecurityConfig.class

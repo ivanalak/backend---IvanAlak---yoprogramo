@@ -99,11 +99,7 @@ public class MySecurityConfig {
    
       return authProvider;
   }   
-@Bean
-public void addCorsMappings(CorsRegistry registry){
 
-    registry.addMapping("/**");
-}
   
  
 }
